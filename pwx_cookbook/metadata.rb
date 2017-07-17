@@ -1,6 +1,6 @@
 name 'pwx_cookbook'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Ravindra Singh'
+maintainer_email 'ravindrasinghkhchi@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures pwx_cookbook'
 long_description 'Installs/Configures pwx_cookbook'
