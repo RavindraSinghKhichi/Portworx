@@ -1,0 +1,14 @@
+{
+   "clusterid": "<%= @clusterid %>",
+   "mgtiface": "<%= @mgtiface %>",
+   "dataiface": "<%= @dataiface %>",
+   "kvdb": [
+        "<%= @kvdb %>"
+    ],
+    "loggingurl": "<%= @loggingurl %>", 
+    "devices": [
+        "<%= @device %>"
+     ],
+     "debug_level": type: "<%= @debug_level %>"
+}
+

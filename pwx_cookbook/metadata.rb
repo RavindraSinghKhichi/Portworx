@@ -1,0 +1,10 @@
+name 'pwx_cookbook'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'All Rights Reserved'
+description 'Installs/Configures pwx_cookbook'
+long_description 'Installs/Configures pwx_cookbook'
+version '0.1.3'
+chef_version '>= 12.1' if respond_to?(:chef_version)
+depends 'ntp'
+depends 'docker', '~> 2.0'

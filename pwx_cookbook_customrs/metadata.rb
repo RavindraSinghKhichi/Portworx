@@ -1,0 +1,10 @@
+name 'pwx_cookbook_customrs'
+maintainer 'Ravindra Singh'
+maintainer_email 'ravindrasinghkhichi@gmail.com'
+license 'All Rights Reserved'
+description 'Installs/Configures pwx_cookbook_customrs'
+long_description 'Installs/Configures pwx_cookbook_customrs'
+version '0.1.4'
+chef_version '>= 12.1' if respond_to?(:chef_version)
+depends 'ntp'
+depends 'docker', '~> 2.0'

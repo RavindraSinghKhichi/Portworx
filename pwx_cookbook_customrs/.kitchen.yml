@@ -1,0 +1,32 @@
+---
+driver:
+  name: vagrant
+  customize:
+   createhd:
+     filename: /dev/xvdg.vmdk
+     size: 1024
+   storageattach:
+     server: default-centos-73
+     storagectl: SATA Controller
+     port: 1
+     device: 0
+     type: hdd
+     medium: /dev/xvdg.vmdk
+provisioner:
+  name: chef_zero
+  always_update_cookbooks: true
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: centos-7.3
+
+suites:
+  - name: default
+    run_list:
+      - recipe[pwx_cookbook::default]
+    verifier:
+      inspec_tests:
+        - test/smoke/default
+    attributes:
